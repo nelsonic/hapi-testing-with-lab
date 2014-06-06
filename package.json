@@ -1,0 +1,29 @@
+{
+  "name": "hapi-testing-with-lab",
+  "version": "0.0.1",
+  "description": "demos testing hapi with lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/lab/bin/lab -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nelsonic/hapi-testing-with-lab.git"
+  },
+  "keywords": [
+    "testing",
+    "hapi",
+    "lab"
+  ],
+  "author": "@expr / @nelsonic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonic/hapi-testing-with-lab/issues"
+  },
+  "homepage": "https://github.com/nelsonic/hapi-testing-with-lab",
+  "devDependencies": {
+    "joi": "^4.5.0",
+    "lab": "^3.2.1",
+    "hapi": "^5.1.0"
+  }
+}
