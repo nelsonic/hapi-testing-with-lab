@@ -16,7 +16,7 @@ server.route({
     method: "GET",
     config: {
         validate: {
-            path: { username: Joi.string().token() }
+            params: { username: Joi.string().token() }
         },
         handler: function(request, reply) {
             if (database[request.params.username]) {
@@ -33,7 +33,7 @@ server.route({
     method: "PUT",
     config: {
         validate: {
-            path: { username: Joi.string().token() },
+            params: { username: Joi.string().token() },
             payload: {
                 full_name: Joi.string(),
                 age: Joi.number().integer(),
@@ -57,7 +57,7 @@ server.route({
     method: "DELETE",
     config: {
         validate: {
-            path: { username: Joi.string().token() }
+            params: { username: Joi.string().token() }
         },
         handler: function(request, reply) {
             if (!database[request.params.username]) {
